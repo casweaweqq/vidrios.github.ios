@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vidriería Reyes</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f5f5f5;
+        color: #333;
+    }
+
+    header {
+        background: #941122;
+        color: white;
+        padding: 20px 40px;
+        text-align: center;
+    }
+
+    nav {
+        background: #003c9d;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    max-width: 600px;
+    }
+    .hero {
+        background: url('parte de adelante.jpeg') center/cover no-repeat;
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 0px 0px 8px rgba(0,0,0,0.8);
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    section {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .service-card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+
+    .service-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+    }
+
+    .quote-box {
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        background: #003c9d;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+    }
+
+    input, textarea, button {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border-radius: 6px;
+        border: 1px solid #aaa;
+    }
+
+    button {
+        background: #0d6efd;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background: #004fd1;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Vidriería Los Reyes</h1>
+    <p>Instalación • Ventanas • Mamparas • Vidrio templado • Varanda de Acero</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#galeria">Galería</a>
+    <a href="#cotizacion">Cotización</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="hero" id="inicio">
+    <h1>Calidad y confianza en cada instalación, ofreciendo seguridad y elegancia con los mejores materiales, y siempre con el compromiso de brindar un trabajo excelente. 
+    </h1>
+</div>
+
+<section id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+
+        <div class="service-card">
+            <img src="ventana.jpeg" alt="">
+            <h3>Instalación de Ventanas</h3>
+            <p>Ventanas corredizas, fijas y proyectables con acabados profesionales.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="manparas.jpg" alt="">
+            <h3>Mamparas de Vidrio</h3>
+            <p>Mamparas templadas modernas para sala, terrazas y oficinas.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="templado.jpg" alt="">
+            <h3>Varanda de Vidrio Templado</h3>
+            <p>Seguridad y Elegancia</p>
+        </div>
+
+        <div class="service-card">
+            <img src="vidrio.jpg" alt="">
+            <h3>Vidrio Templado</h3>
+            <p>Vidrio de alta calidad y preoteccion para niños y adultos mayores</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="galeria">
+    <h2>Galeria</h2>
+    <div class="gallery">
+        <img src="mesa 1.jpeg">
+        <img src="mesa 2.jpeg">
+        <img src="vidrio 1.jpeg">
+        <img src="cortador.jpeg" alt="">
+    </div>
+</section>
+
+<section id="cotizacion">
+    <h2>Solicitar Cotización</h2>
+    <div class="quote-box">
+        <form>
+            <input type="text" placeholder="Nombre completo" required>
+            <input type="text" placeholder="Tipo de trabajo (ventanas, mampara, vidrio templado...)" required>
+            <textarea rows="4" placeholder="Descripción del proyecto" required></textarea>
+            <button type="submit">Enviar cotización</button>
+        </form>
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Ate, Lima - Perú</p>
+    <p>📞 999 999 999</p>
+    <p>📧 vidrio@vidrieria.com</p>
+</section>
+
+<footer>
+    © 2025 Vidriería Moderna — Todos los derechos reservados
+</footer>
+
+</body>
+</html>
